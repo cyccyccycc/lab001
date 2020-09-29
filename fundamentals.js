@@ -8,7 +8,7 @@ const aCar = {
     },
     registration: { year: 201, county: "WD", number: 1058 }
   };
-  console.log(aCar.owner + ' drives a ' + aCar.type.make);
+
   console.log(aCar.owner + " drives a " + aCar.type.make);
   console.log(
     "Reg. = " +
@@ -19,3 +19,18 @@ const aCar = {
       aCar.registration.number
   );
 
+  aCar.milage = 10000
+  aCar.color = {
+    exterior: "red",
+    interior: { texture: "leather", shade: "cream" }
+  }
+  
+  console.log(
+    "It is a " +
+      aCar.color.exterior +
+      " car, " +
+      aCar.milage +
+      " milage, with " +
+      aCar.color.interior.texture +
+      " interior."
+  );
